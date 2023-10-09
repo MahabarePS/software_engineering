@@ -6,6 +6,6 @@ pipelines:
         clone:
           enabled: false
         script:
-          - git clone --bare git@bitbucket.org:prasadmahabare-admin@bitbucket.org/prasadmahabare/homework_acs560.git
+          - git clone --bare git@bitbucket.org:prasadmahabare/homework_acs560.git
           - cd homework_acs560.git
-          - git push --mirror git@github.com:https://github.com/MahabarePS/software_engineering.git
+          - git push --mirror git@github.com:MahabarePS/software_engineering.git
