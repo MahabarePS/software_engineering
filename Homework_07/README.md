@@ -29,11 +29,14 @@ To run the program, follow these steps:
    ```bash
    $ cd .\src\
    $ python .\cross_country_race.py
-2. To run the tests for this program, you need to use the pytest library. Here's how you can run the tests:
-3.  Install pytest using pip if you haven't already:
+2. To run the tests for this program, you need to use the pytest library. Here's how you can run the tests.
+    Install pytest using pip if you haven't already:
+    ```bash
     $ pip install pytest
 4.  Navigate to the tests directory:
+    ```bash
     $ cd ..  # Move up one level
     $ cd .\tests\
 5.  Run the tests with pytest:
+    ```bash
     $ pytest one.py
