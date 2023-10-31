@@ -15,6 +15,8 @@
 	<description>Home work 10 database connections</description>
 	<properties>
 		<java.version>1.8</java.version>
+		<spring-boot.version>2.3.12.RELEASE</spring-boot.version>
+    	<spring-data-releasetrain.version>Moore-SR12</spring-data-releasetrain.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -50,6 +52,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.acs560</groupId>
+			<artifactId>restaurants_api</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 
