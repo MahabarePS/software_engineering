@@ -1,0 +1,55 @@
+title EduLoyaltyFrontEnd
+
+actor User
+participant Refer
+participant Login/Signup
+participant Dashboard
+participant Pts_Cal
+participant Coupon
+participant Badge
+participant HOF
+participant Feedback
+participant Redeem
+
+activate User
+activate Refer
+User->Refer: Refer
+Refer-->User:Referral Code Pop-Up
+deactivateafter Refer
+activate Login/Signup
+User->Login/Signup: Signup
+Login/Signup-->User:Redirects to Login Page
+User->Login/Signup: Login
+note over Login/Signup:If creds are validated, let the user log in
+Login/Signup-->User: Response
+activate Dashboard
+Login/Signup->Dashboard:Redirect to
+deactivateafter Login/Signup
+activate Pts_Cal
+Pts_Cal-->Dashboard: show_pts
+deactivateafter Pts_Cal
+activate Coupon
+Coupon-->Dashboard: show_coupons
+deactivateafter Coupon
+activate Badge
+Badge-->Dashboard: show_Badges
+deactivateafter Badge
+deactivateafter Dashboard
+activate HOF
+User->HOF: Redirects to HOF
+HOF->User:Show top 3 users
+deactivateafter HOF
+activate Feedback
+User->Feedback: Redirects to Feedback
+Feedback-->User: Acknowledge Feedback
+deactivateafter Feedback
+activate Dashboard
+activate Redeem
+User->Dashboard: Redeem Request
+Redeem-->Dashboard: Redeem Acknowledged
+deactivateafter Redeem
+deactivateafter Dashboard
+deactivateafter User
+
+
+

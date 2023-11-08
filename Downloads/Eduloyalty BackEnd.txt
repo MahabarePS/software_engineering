@@ -1,0 +1,70 @@
+title EduLoyalty BackEnd
+
+actor Dashboard
+
+participant Dashboard
+participant Database
+participant Pts_Cal
+participant Coupon
+participant Badge
+participant HOF
+participant Feedback
+participant Redeem
+
+activate Pts_Cal
+Pts_Cal->Pts_Cal:Daily compute Points
+Pts_Cal-->Database: insert t_points
+
+activate Coupon
+Pts_Cal-->Coupon:Calculated Points
+Pts_Cal-->Dashboard:Show_pts()
+deactivateafter Pts_Cal
+
+note over Coupon: Fetch coupon list from Database
+Coupon->Coupon: compute Coupons
+Coupon->Database: insert Coupons
+Coupon-->Dashboard:show Coupon()
+deactivateafter Coupon
+
+activate Database
+Database->Badge:Fetches user-Coupon list, rank, badge list
+deactivateafter Database
+
+activate Badge
+Badge-->Badge:Compute Badge
+note over Badge:using user-coupon list
+Badge-->Dashboard:Show_Badges()
+
+deactivateafter Badge
+activate Database
+activate HOF
+Database-->HOF:fetch top 3 users
+deactivateafter Database
+deactivateafter HOF
+
+activate Pts_Cal
+activate Feedback
+Feedback-->Pts_Cal: Add Feedback Points
+deactivateafter Feedback
+activate Database
+Pts_Cal-->Database:Updated t_pts()
+deactivateafter Database
+Pts_Cal-->Dashboard:Updated t_pts()
+activate Dashboard
+deactivateafter Dashboard
+deactivateafter Pts_Cal
+
+activate Redeem
+Redeem-->Pts_Cal: redeemed points
+deactivateafter Redeem
+activate Pts_Cal
+Pts_Cal-->Pts_Cal:Reduce points
+note over Pts_Cal:t_pts - redeemed_pts
+Pts_Cal-->Database:Update reduced_pts
+activate Database
+deactivateafter Database
+Pts_Cal-->Dashboard:Updated_t_pts()
+activate Dashboard
+deactivateafter Dashboard
+
+

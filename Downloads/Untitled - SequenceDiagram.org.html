@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://sequencediagram.org/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Untitled - SequenceDiagram.org</title>
+    <meta name="description" content="Free sequence diagram online tool. Create sequence diagrams using textual notation or draw quickly via Drag and Drop with an easy to use interface.">
+    <meta name="keywords" content="sequence diagram tool,sequence diagram online,online sequence diagram,web sequence diagrams,sequence diagram,free,sequence diagram example,时序图,Diagrama de secuencia,Diagramme de séquence,Diagrama de sequência,シーケンス図,在线时序图">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="https://sequencediagram.org/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://sequencediagram.org/favicon.ico" type="image/x-icon">
+
+    <meta property="og:image" content="https://sequencediagram.org/icon128x128.png">
+    <meta property="og:url" content="https://sequencediagram.org">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SequenceDiagram.org - UML Sequence Diagram Online Tool">
+    <meta property="og:description" content="Free sequence diagram online tool. Create sequence diagrams using textual notation or draw quickly via Drag and Drop with an easy to use interface.">
+
+    <script src="./Untitled - SequenceDiagram.org_files/cb=gapi.loaded_0" async=""></script><script src="./Untitled - SequenceDiagram.org_files/lz-string.min.js"></script>
+    <script src="./Untitled - SequenceDiagram.org_files/canvas2svg.min.js"></script>
+    <link rel="stylesheet" href="./Untitled - SequenceDiagram.org_files/codemirror.css">
+    <script src="./Untitled - SequenceDiagram.org_files/codemirror.min.js"></script>
+    <link rel="stylesheet" href="./Untitled - SequenceDiagram.org_files/show-hint.css">
+    <script src="./Untitled - SequenceDiagram.org_files/show-hint.js"></script>
+    <script src="./Untitled - SequenceDiagram.org_files/active-line.js"></script>
+    <link rel="stylesheet" href="./Untitled - SequenceDiagram.org_files/dialog.css">
+    <script src="./Untitled - SequenceDiagram.org_files/dialog.js"></script>
+    <script src="./Untitled - SequenceDiagram.org_files/searchcursor.js"></script>
+    <script src="./Untitled - SequenceDiagram.org_files/search.js"></script>
+    <script src="./Untitled - SequenceDiagram.org_files/annotatescrollbar.js"></script>
+    <link rel="stylesheet" href="./Untitled - SequenceDiagram.org_files/matchesonscrollbar.css">
+    <script src="./Untitled - SequenceDiagram.org_files/matchesonscrollbar.js"></script>
+    <script src="./Untitled - SequenceDiagram.org_files/jump-to-line.js"></script>
+    <script src="./Untitled - SequenceDiagram.org_files/rbush.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./Untitled - SequenceDiagram.org_files/index.css">
+    <link rel="stylesheet" href="./Untitled - SequenceDiagram.org_files/print.css" type="text/css" media="print">
+    <script src="./Untitled - SequenceDiagram.org_files/all.min.js"></script>
+
+    <script src="./Untitled - SequenceDiagram.org_files/msal.min.js" crossorigin="anonymous"></script>
+    <script src="./Untitled - SequenceDiagram.org_files/initOneDrive.js"></script>
+    <script src="./Untitled - SequenceDiagram.org_files/OneDrive.js" defer="" async="" crossorigin="anonymous"></script>
+    <script id="googleClient" src="./Untitled - SequenceDiagram.org_files/client" defer="" async=""></script>
+    <script id="googleApi" src="./Untitled - SequenceDiagram.org_files/api.js" defer="" async="" gapi_processed="true"></script>
+    <script src="./Untitled - SequenceDiagram.org_files/initGoogleDrive.js"></script>
+<style>.picker-dialog-frame{width:100%;height:100%;border:0;overflow:hidden}.picker-dialog-bg{position:absolute;top:0;left:0;background-color:#fff;z-index:1000}.picker-dialog{position:absolute;top:0;left:0;background-color:#fff;border:1px solid #acacac;width:auto;padding:0;z-index:1001;overflow:auto;box-shadow:0 4px 16px rgba(0,0,0,.2)}.picker-dialog-content{font-size:0;padding:0}.picker-dialog-buttons,.picker-dialog-title{display:none}</style><style id="googleidentityservice_button_styles">.qJTHM{-webkit-user-select:none;color:#202124;direction:ltr;-webkit-touch-callout:none;font-family:"Roboto-Regular",arial,sans-serif;-webkit-font-smoothing:antialiased;font-weight:400;margin:0;overflow:hidden;-webkit-text-size-adjust:100%}.ynRLnc{left:-9999px;position:absolute;top:-9999px}.L6cTce{display:none}.bltWBb{word-break:break-all}.hSRGPd{color:#1a73e8;cursor:pointer;font-weight:500;text-decoration:none}.Bz112c-W3lGp{height:16px;width:16px}.Bz112c-E3DyYd{height:20px;width:20px}.Bz112c-r9oPif{height:24px;width:24px}.Bz112c-uaxL4e{-webkit-border-radius:10px;border-radius:10px}.LgbsSe-Bz112c{display:block}.S9gUrf-YoZ4jf,.S9gUrf-YoZ4jf *{border:none;margin:0;padding:0}.fFW7wc-ibnC6b>.aZ2wEe>div{border-color:#4285f4}.P1ekSe-ZMv3u>div:nth-child(1){background-color:#1a73e8!important}.P1ekSe-ZMv3u>div:nth-child(2),.P1ekSe-ZMv3u>div:nth-child(3){background-image:linear-gradient(to right,rgba(255,255,255,.7),rgba(255,255,255,.7)),linear-gradient(to right,#1a73e8,#1a73e8)!important}.haAclf{display:inline-block}.nsm7Bb-HzV7m-LgbsSe{-webkit-border-radius:4px;border-radius:4px;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-transition:background-color .218s,border-color .218s;transition:background-color .218s,border-color .218s;-webkit-user-select:none;-webkit-appearance:none;background-color:#fff;background-image:none;border:1px solid #dadce0;color:#3c4043;cursor:pointer;font-family:"Google Sans",arial,sans-serif;font-size:14px;height:40px;letter-spacing:0.25px;outline:none;overflow:hidden;padding:0 12px;position:relative;text-align:center;vertical-align:middle;white-space:nowrap;width:auto}@media screen and (-ms-high-contrast:active){.nsm7Bb-HzV7m-LgbsSe{border:2px solid windowText;color:windowText}}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe{font-size:14px;height:32px;letter-spacing:0.25px;padding:0 10px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe{font-size:11px;height:20px;letter-spacing:0.3px;padding:0 8px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe{padding:0;width:40px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.pSzOP-SxQuSe{width:32px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.purZT-SxQuSe{width:20px}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK{-webkit-border-radius:20px;border-radius:20px}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK.pSzOP-SxQuSe{-webkit-border-radius:16px;border-radius:16px}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK.purZT-SxQuSe{-webkit-border-radius:10px;border-radius:10px}.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc{border:none;color:#fff}.nsm7Bb-HzV7m-LgbsSe.MFS4be-v3pZbf-Ia7Qfc{background-color:#1a73e8}.nsm7Bb-HzV7m-LgbsSe.MFS4be-JaPV2b-Ia7Qfc{background-color:#202124;color:#e8eaed}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{height:18px;margin-right:8px;min-width:18px;width:18px}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{height:14px;min-width:14px;width:14px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{height:10px;min-width:10px;width:10px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-Bz112c{margin-left:8px;margin-right:-4px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{margin:0;padding:10px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{padding:8px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{padding:4px}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-top-left-radius:3px;border-top-left-radius:3px;-webkit-border-bottom-left-radius:3px;border-bottom-left-radius:3px;display:-webkit-box;display:-webkit-flex;display:flex;justify-content:center;-webkit-align-items:center;align-items:center;background-color:#fff;height:36px;margin-left:-10px;margin-right:12px;min-width:36px;width:36px}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf .nsm7Bb-HzV7m-LgbsSe-Bz112c,.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf .nsm7Bb-HzV7m-LgbsSe-Bz112c{margin:0;padding:0}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{height:28px;margin-left:-8px;margin-right:10px;min-width:28px;width:28px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{height:16px;margin-left:-6px;margin-right:8px;min-width:16px;width:16px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:3px;border-radius:3px;margin-left:2px;margin-right:0;padding:0}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:18px;border-radius:18px}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:14px;border-radius:14px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:8px;border-radius:8px}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-bN97Pc-sM5MNb{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-flex-direction:row;flex-direction:row;justify-content:space-between;-webkit-flex-wrap:nowrap;flex-wrap:nowrap;height:100%;position:relative;width:100%}.nsm7Bb-HzV7m-LgbsSe .oXtfBe-l4eHX{justify-content:center}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-BPrWId{-webkit-flex-grow:1;flex-grow:1;font-family:"Google Sans",arial,sans-serif;font-weight:500;overflow:hidden;text-overflow:ellipsis;vertical-align:top}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-BPrWId{font-weight:300}.nsm7Bb-HzV7m-LgbsSe .oXtfBe-l4eHX .nsm7Bb-HzV7m-LgbsSe-BPrWId{-webkit-flex-grow:0;flex-grow:0}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-MJoBVe{-webkit-transition:background-color .218s;transition:background-color .218s;bottom:0;left:0;position:absolute;right:0;top:0}.nsm7Bb-HzV7m-LgbsSe:hover,.nsm7Bb-HzV7m-LgbsSe:focus{-webkit-box-shadow:none;box-shadow:none;border-color:#d2e3fc;outline:none}.nsm7Bb-HzV7m-LgbsSe:hover .nsm7Bb-HzV7m-LgbsSe-MJoBVe,.nsm7Bb-HzV7m-LgbsSe:focus .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(66,133,244,.04)}.nsm7Bb-HzV7m-LgbsSe:active .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(66,133,244,.1)}.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:hover .nsm7Bb-HzV7m-LgbsSe-MJoBVe,.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:focus .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(255,255,255,.24)}.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:active .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(255,255,255,.32)}.nsm7Bb-HzV7m-LgbsSe .n1UuX-DkfjY{-webkit-border-radius:50%;border-radius:50%;display:-webkit-box;display:-webkit-flex;display:flex;height:20px;margin-left:-4px;margin-right:8px;min-width:20px;width:20px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId{font-family:"Roboto";font-size:12px;text-align:left}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .ssJRIf,.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff .fmcmS{overflow:hidden;text-overflow:ellipsis}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;color:#5f6368;fill:#5f6368;font-size:11px;font-weight:400}.nsm7Bb-HzV7m-LgbsSe.jVeSEe.MFS4be-Ia7Qfc .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff{color:#e8eaed;fill:#e8eaed}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff .Bz112c{height:18px;margin:-3px -3px -3px 2px;min-width:18px;width:18px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-top-left-radius:0;border-top-left-radius:0;-webkit-border-bottom-left-radius:0;border-bottom-left-radius:0;-webkit-border-top-right-radius:3px;border-top-right-radius:3px;-webkit-border-bottom-right-radius:3px;border-bottom-right-radius:3px;margin-left:12px;margin-right:-10px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:18px;border-radius:18px}.L5Fo6c-sM5MNb{border:0;display:block;left:0;position:relative;top:0}.L5Fo6c-bF1uUb{-webkit-border-radius:4px;border-radius:4px;bottom:0;cursor:pointer;left:0;position:absolute;right:0;top:0}.L5Fo6c-bF1uUb:focus{border:none;outline:none}sentinel{}</style></head>
+
+<body data-new-gr-c-s-check-loaded="14.1039.0" data-gr-ext-installed="" data-new-gr-c-s-loaded="14.1039.0">
+<div id="top">
+    <img id="logo" alt="SequenceDiagram.org" src="./Untitled - SequenceDiagram.org_files/logo24x24.png">
+    <div id="activeFile">
+        <span id="activeFileStatus"><label for="activeFileNameChange"></label><input id="activeFileNameChange" style="display: none;"><span id="activeFileNameStatus" style="display: inline;">Untitled</span> [<span id="activeFileStorageStatus">Saved to Local Disk - 26/09/2023 17:56:45</span>]</span>
+    </div>
+    <!--lic-->
+</div>
+<div id="topRight">
+    <div id="menuButtonView" class="menuButton menuHighlight">View</div>
+    <div id="menuButtonSettings" class="menuButton menuHighlight nonPresentation">Settings</div>
+
+    <!-- donations-start -->
+    <div id="menuButtonDonations" class="menuButton menuHighlight nonPresentation">Donations</div>
+    <!-- donations-end -->
+
+    <div id="menuButtonHelp" class="menuButton menuHighlight nonPresentation">Help</div>
+
+    <div id="menuView" class="menuContent" style="display: none;">
+        <div id="menuViewPresentationMode" class="menuRow menuHighlight" title="Hides menus, button, and text editor">
+            <span id="presentationModeCheckbox">☐</span>&nbsp;Presentation Mode (Ctrl+M)
+        </div>
+        <div id="menuViewParticipantOverlay" class="menuRow menuHighlight" title="Displays the participants in the top of the diagram as an overlay when they are scrolled out of view">
+            <span id="participantOverlayCheckbox">☐</span>&nbsp;Participant Overlay On Scroll
+        </div>
+        <div id="menuViewReadOnlyPresentationMode" class="menuRow menuHighlight" title="When in presentation mode, disables editing the diagram using the mouse and instead allows to grab the diagram and
+                    move it around instead of scrolling">
+            <span id="readOnlyPresentationModeCheckbox">☐</span>&nbsp;Read Only Presentation Mode
+        </div>
+        <div id="menuViewShrinkToFit" class="menuRow menuHighlight" title="Scales the diagram to fit the page when it grows larger than the available space (works in presentation mode and edit mode)">
+            <span id="shrinkToFitCheckbox">☐</span>&nbsp;Shrink to Fit
+        </div>
+    </div>
+    <div id="menuSettings" class="menuContent right" style="display: none;">
+        <div class="menuRow">
+            <fieldset>
+                <legend>Default (Ctrl+S / Ctrl+O) Storage</legend>
+                <div id="menuSettingsDefaultStorageFileSystem" class="menuRow menuHighlight">
+                    <span id="defaultStorageRadioFileSystem">○</span>&nbsp;File System
+                </div>
+                <div id="menuSettingsDefaultStorageGoogleDrive" class="menuRow menuHighlight">
+                    <span id="defaultStorageRadioGoogleDrive">○</span>&nbsp;Google Drive
+                </div>
+                <div id="menuSettingsDefaultStorageGoogleDriveRootFolder" class="menuRow menuHighlight">
+                    <span id="defaultStorageRadioGoogleDriveRootFolder">○</span>&nbsp;Google Drive Root Folder
+                </div>
+                <div id="menuSettingsDefaultStorageOneDrive" class="menuRow menuHighlight">
+                    <span id="defaultStorageRadioOneDrive">○</span>&nbsp;OneDrive
+                </div>
+                <div id="menuSettingsDefaultStorageWebStorage" class="menuRow menuHighlight">
+                    <span id="defaultStorageRadioWebStorage">○</span>&nbsp;Web Storage (localStorage)
+                </div>
+                <div id="menuSettingsDefaultStorageLocalDisk" class="menuRow menuHighlight">
+                    <span id="defaultStorageRadioLocalDisk">◉</span>&nbsp;Local Disk (legacy)
+                </div>
+            </fieldset>
+        </div>
+        <div id="menuSettingsAlertForUnsavedChanges" class="menuRow menuHighlight">
+            <span id="alertForUnsavedChangesCheckbox">☑</span>&nbsp;Alert for unsaved changes
+        </div>
+        <div id="menuSettingsAutosave" class="menuRow menuHighlight">
+            <span id="autosaveCheckbox">☑</span>&nbsp;Autosave every 10 min if there are changes
+        </div>
+        <div id="menuSettingsSynchronizeFilenameWithTitle" class="menuRow menuHighlight">
+            <span id="synchronizeFilenameWithTitleCheckbox">☐</span>&nbsp;Synchronize filename with title (legacy behavior)
+        </div>
+        <div id="menuSettingsWordWrapSourceText" class="menuRow menuHighlight">
+            <span id="wordWrapSourceTextCheckbox">☑</span>&nbsp;Word wrap source text
+        </div>
+    </div>
+
+    <!-- donations-start -->
+    <div id="menuDonations" class="menuContent right" style="display: none;">
+        <div class="menuRow">
+            <table class="menuTable">
+                <tbody><tr>
+                    <td>Patreon ($1/month)&nbsp;&nbsp;</td>
+                    <td class="right">
+                        <a class="sc-VigVT gTXqXb" href="https://www.patreon.com/bePatron?u=15407613" target="_blank" rel="noopener">
+                            <div class="sc-bZQynM fKGKmg">
+                                <div class="sc-bZQynM fSJOpK">
+                                    <div class="eren1a-0 fysOvk">
+                                    <span class="s126e0qj-0 jlyAAk">
+                                        <svg viewBox="0 0 569 546" version="1.1" xmlns="http://www.w3.org/2000/svg"><g><circle data-color="1" id="Oval" cx="362.589996" cy="204.589996" r="204.589996"></circle><rect data-color="2" id="Rectangle" x="0" y="0" width="100" height="545.799988"></rect></g></svg>
+                                    </span>
+                                    </div>
+                                    <div class="mr4juj-0 jQSwUz"></div>
+                                    <div class="button-text">Become a patron</div>
+                                </div>
+                            </div>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Paypal&nbsp;&nbsp;</td>
+                    <td class="right">
+                        <a href="https://www.paypal.com/donate?hosted_button_id=5VF8RAU4UAVNA" target="_blank" id="paypalLink"><img src="./Untitled - SequenceDiagram.org_files/btn_donateCC_LG.png" width="98" height="47"></a>
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div>
+    <!-- donations-end -->
+
+    <div id="menuHelp" class="menuContent right" style="display: none;">
+        <div id="menuHelpInstructionsNewWindow" class="menuRow menuHighlight">
+            Instructions (new window)
+        </div>
+        <div id="menuHelpInstructionsModalPopup" class="menuRow menuHighlight">
+            Instructions
+        </div>
+        <div id="menuHelpPrivacyPolicy" class="menuRow menuHighlight">
+            Privacy Policy
+        </div>
+        <div id="menuHelpTermsOfService" class="menuRow menuHighlight">
+            Terms of Service
+        </div>
+        <div id="menuHelpReleaseNotesNewWindow" class="menuRow menuHighlight">
+            Release notes
+        </div>
+        <div id="menuHelpAbout" class="menuRow menuHighlight">
+            About
+        </div>
+    </div>
+
+    <div id="notification" style="display: none;">Exported to EduLoyalty.png</div>
+</div>
+
+<div id="actions">
+    <img id="newDiagram" class="actionButton" src="./Untitled - SequenceDiagram.org_files/new.svg" title="new diagram">
+    <img id="openButton" class="actionButton" src="./Untitled - SequenceDiagram.org_files/open.svg" title="open source text">
+    <img id="saveButton" class="actionButton" src="./Untitled - SequenceDiagram.org_files/save.svg" title="save source text">
+    <img id="exportButton" class="actionButton" src="./Untitled - SequenceDiagram.org_files/export01.svg" title="export diagram">
+    <hr class="separator">
+    <img id="addParticipant" class="actionButton" src="./Untitled - SequenceDiagram.org_files/participant01.svg" title="add participant">
+    <img id="zoomIn" class="actionButton" src="./Untitled - SequenceDiagram.org_files/zoomin.svg" title="zoom in">
+    <img id="zoomOut" class="actionButton" src="./Untitled - SequenceDiagram.org_files/zoomout.svg" title="zoom out">
+</div>
+
+<div id="source"><div id="handleRight"></div><div class="CodeMirror cm-s-default CodeMirror-wrap" style="width: 450px;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 65px; left: 201.031px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0" aria-autocomplete="list"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true" style="width: 18px; pointer-events: none; display: block; bottom: 0px;"><div style="min-width: 1px; height: 938px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true" style="height: 18px; pointer-events: none;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 40px; margin-bottom: 0px; border-right-width: 50px; min-height: 938px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like">x</pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>62</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style="visibility: hidden;"><div class="CodeMirror-cursor" style="left: 160.031px; top: 60px; height: 15px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;" class=""><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">title</span><span class="cm-variable"> EduLoyalty</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">actor</span><span class="cm-tag"> User</span></span></pre></div><div style="position: relative;" class=""><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">participant</span><span class="cm-tag"> Refer</span></span></pre></div><div style="position: relative;" class="CodeMirror-activeline"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -40px; width: 40px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">participant</span><span class="cm-tag"> Login/Signup</span></span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">participant</span><span class="cm-tag"> Dashboard</span></span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">participant</span><span class="cm-tag"> Database</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">participant</span><span class="cm-tag"> Pts_Cal</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">participant</span><span class="cm-tag"> Coupon</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">participant</span><span class="cm-tag"> Badge</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">11</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">participant</span><span class="cm-tag"> HOF</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">12</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">participant</span><span class="cm-tag"> Feedback</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">13</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">participant</span><span class="cm-tag"> Redeem</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">14</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">15</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">activate</span><span class="cm-tag"> User</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">16</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">activate</span><span class="cm-tag"> Refer</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">17</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">User</span><span class="cm-keyword">-&gt;</span><span class="cm-tag">Refer</span><span class="cm-variable">: Ref</span>er</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">18</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">Refer</span><span class="cm-keyword">--&gt;</span><span class="cm-tag">User</span><span class="cm-variable">:Acknowledgemen</span>t</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">19</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">deactivateafter</span><span class="cm-tag"> Refer</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">20</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">activate</span><span class="cm-tag"> Login/Signup</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">21</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">User</span><span class="cm-keyword">-&gt;</span><span class="cm-tag">Login/Signup</span><span class="cm-variable">: Sign</span>up</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">22</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">Login/Signup</span><span class="cm-keyword">--&gt;</span><span class="cm-tag">User</span><span class="cm-variable">:Acknowledgemen</span>t</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">23</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">Login/Signup</span><span class="cm-keyword">-&gt;</span><span class="cm-tag">Database</span><span class="cm-variable">:Insert user dat</span>a</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">24</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">Database</span><span class="cm-keyword">--&gt;</span><span class="cm-tag">Login/Signup</span>:</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">25</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">User</span><span class="cm-keyword">-&gt;</span><span class="cm-tag">Login/Signup</span><span class="cm-variable">: Log</span>in</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">26</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">deactivateafter</span><span class="cm-tag"> User</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">27</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">activate</span><span class="cm-tag"> Pts_Cal</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">28</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">Database</span><span class="cm-keyword">-&gt;</span><span class="cm-tag">Pts_Cal</span><span class="cm-variable">: Cal_pts</span>()</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">29</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">deactivateafter</span><span class="cm-tag"> Pts_Cal</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">30</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">activate</span><span class="cm-tag"> Database</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">31</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">Login/Signup</span><span class="cm-keyword">-&gt;</span><span class="cm-tag">Database</span><span class="cm-variable">:Validate user dat</span>a</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">32</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">Database</span><span class="cm-keyword">--&gt;</span><span class="cm-tag">Login/Signup</span><span class="cm-variable">:Respons</span>e</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">33</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">deactivateafter</span><span class="cm-tag"> Login/Signup</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">34</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">Database</span><span class="cm-keyword">-&gt;</span><span class="cm-tag">Dashboard</span><span class="cm-variable">:Redirecte</span>d</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">35</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">deactivateafter</span><span class="cm-tag"> Database</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">36</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">activate</span><span class="cm-tag"> Pts_Cal</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">37</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">Pts_Cal</span><span class="cm-keyword">-&gt;</span><span class="cm-tag">Dashboard</span><span class="cm-variable">: Displays total poin</span>ts</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">38</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">Pts_Cal</span><span class="cm-keyword">-&gt;</span><span class="cm-tag">Pts_Cal</span><span class="cm-variable">: compute Poin</span>ts</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">39</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">Pts_Cal</span><span class="cm-keyword">-&gt;</span><span class="cm-tag">Database</span><span class="cm-variable">: insert t-poin</span>ts</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">40</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">deactivateafter</span><span class="cm-tag"> Pts_Cal</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">41</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">activate</span><span class="cm-tag"> Coupon</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">42</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">Coupon</span><span class="cm-keyword">-&gt;</span><span class="cm-tag">Dashboard</span><span class="cm-variable">: Display available coupo</span>ns</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">43</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">Coupon</span><span class="cm-keyword">-&gt;</span><span class="cm-tag">Coupon</span><span class="cm-variable">: compute Coupo</span>ns</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">44</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">Coupon</span><span class="cm-keyword">-&gt;</span><span class="cm-tag">Database</span><span class="cm-variable">:insert Coupo</span>n</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">45</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">deactivateafter</span><span class="cm-tag"> Coupon</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">46</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">activate</span><span class="cm-tag"> Badge</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">47</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">Coupon</span><span class="cm-keyword">-&gt;</span><span class="cm-tag">Badge</span><span class="cm-variable">: Coupon li</span>st</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">48</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">deactivateafter</span><span class="cm-tag"> Badge</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">49</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">activate</span><span class="cm-tag"> HOF</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">50</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">activate</span><span class="cm-tag"> User</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">51</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">User</span><span class="cm-keyword">-&gt;</span><span class="cm-tag">HOF</span><span class="cm-variable">: Show hall of fame pa</span>ge</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">52</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">HOF</span><span class="cm-keyword">--&gt;</span><span class="cm-tag">Database</span><span class="cm-variable">: fetch top</span> 3</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">53</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">deactivateafter</span><span class="cm-tag"> HOF</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">54</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">activate</span><span class="cm-tag"> Feedback</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">55</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">User</span><span class="cm-keyword">-&gt;</span><span class="cm-tag">Feedback</span><span class="cm-variable">: Give feedba</span>ck</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">56</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">Feedback</span><span class="cm-keyword">--&gt;</span><span class="cm-tag">Pts_Cal</span><span class="cm-variable">: compute feedback poin</span>ts</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">57</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">deactivateafter</span><span class="cm-tag"> Feedback</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">58</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">activate</span><span class="cm-tag"> Redeem</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">59</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">User</span><span class="cm-keyword">-&gt;</span><span class="cm-tag">Redeem</span><span class="cm-variable">: Coupon Redeeme</span>d </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">60</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">deactivateafter</span><span class="cm-tag"> Redeem</span></span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">61</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">deactivateafter</span><span class="cm-tag"> User</span></span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">62</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 50px; width: 1px; border-bottom: 0px solid transparent; top: 938px;"></div><div class="CodeMirror-gutters" style="height: 988px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div><div class="CodeMirror-gutter errors"></div></div></div><div style="position: absolute; right: 0px; top: 0px; z-index: 7; pointer-events: none;"></div></div></div>
+
+<canvas id="diagramCanvas" class="canvas" width="1425" height="1387">
+    Device not supported, use firefox or chrome or safari or ie 10+
+</canvas>
+<canvas id="participantCanvas" class="canvas" width="1425" height="97" style="display: none; top: 40px;"></canvas>
+<canvas id="interactionCanvas" class="canvas" width="1425" height="1387" style="cursor: auto;"></canvas>
+<div id="scrollBox" style="width: 1425.4px; height: 1387.73px;"></div>
+
+<div id="entryEditor" style="display: none;">
+    <div id="entryEditorTop">&nbsp;<span id="entryEditorCloseIcon" title="close">✕</span></div>
+    <div id="participantEdit" style="display: none;">
+        Participant alias<br>
+        <input id="participantAliasInput"><br><br>
+        Participant long name<br>
+    </div>
+    <textarea id="entryEditorTextArea"></textarea>
+    <div><span class="popupDialogButtons">
+        <button id="entryEditorCancel">Cancel</button>
+        <button id="entryEditorUpdate">Update (Ctrl + Enter)</button>
+    </span></div>
+</div>
+
+<div id="openSourceMenu" class="actionMenu" style="display: none;">
+    <span class="openSaveLabel">File System</span><br>
+    <button id="openButtonFileSystem">Open</button>
+    <br>
+    <br>
+    <span class="openSaveLabel">Google Drive&nbsp;&nbsp;<a href="https://gsuite.google.com/marketplace/app/sequencediagramorg/128530462773" target="_blank" title="SequenceDiagramOrg app is available for opening diagrams directly from inside Google Drive">G Suite Marketplace</a></span><br>
+    <button id="openButtonGoogleDrive">Open</button>
+    <br>
+    <br>
+    <span class="openSaveLabel">OneDrive</span><br>
+    <button id="openButtonOneDrive">Open</button>
+    <br>
+    <br>
+    <span class="openSaveLabel">Web Storage (localStorage)</span><br>
+    <button id="openButtonWebStorage">Open</button>
+    <br>
+    <br>
+    <span class="openSaveLabel">Local Disk (File Reader)</span><br>
+    <form>
+        <input id="openButtonLocalDisk" type="file">
+    </form>
+</div>
+
+<div id="saveSourceMenu" class="actionMenu" style="display: none;">
+    <span class="openSaveLabel">File Name</span><br>
+    <label for="fileName"></label><input id="fileName" type="text" size="40"><span class="smallText">.txt</span>
+    <br>
+    <br>
+    <span class="openSaveLabel">File System</span><br>
+    <button id="saveButtonFileSystem">Save</button>
+    &nbsp;&nbsp;
+    <button id="saveAsButtonFileSystem">Save As...</button>
+    <br>
+    <br>
+    <span class="openSaveLabel">Google Drive</span><br>
+    <button id="saveButtonGoogleDrive">Save</button>
+    &nbsp;&nbsp;
+    <button id="saveInRootButtonGoogleDrive">Save in Root Folder</button>
+    <br>
+    <br>
+    <span class="openSaveLabel">OneDrive</span><br>
+    <button id="saveButtonOneDrive">Save</button>
+    <br>
+    <br>
+    <span class="openSaveLabel">Web Storage (localStorage)</span><br>
+    <button id="saveButtonWebStorage">Save</button>
+    <br>
+    <br>
+    <span class="openSaveLabel">Local Disk (Download Folder)</span><br>
+    <button id="saveButtonLocalDisk">Download</button>
+</div>
+
+<div id="exportDiagramMenu" class="actionMenu" style="display: none; top: 200px; left: 50px;">
+    <span class="openSaveLabel">File Name</span><br>
+    <label for="fileNameExport"></label><input id="fileNameExport" type="text" size="40"><span class="smallText">.xyz</span>
+    <br>
+    <br>
+    <span class="openSaveLabel">SVG Image File (vector image with embedded source text)</span><br>
+    <button id="exportButtonSvg">Export To...</button>
+    &nbsp;&nbsp;
+    <button id="downloadButtonSvg">Download</button>
+    <br>
+    <br>
+    <span class="openSaveLabel">PNG Image File (at current zoom level)</span><br>
+    <button id="exportButtonPng">Export To...</button>
+    &nbsp;&nbsp;
+    <a href="https://sequencediagram.org/#" id="downloadButtonPngLink"><button id="downloadButtonPng">Download</button></a>
+    <br>
+    <br>
+    <span class="openSaveLabel">PNG Image for Right Click Copy (at current zoom level)</span><br>
+    <button id="exportButtonCopyPaste">Render</button>
+    <br>
+    <br>
+    <span class="openSaveLabel">URL to Share</span><br>
+    <button id="exportButtonUrl">Create</button>
+</div>
+
+<div id="cover">
+    <div class="popupDialog" id="imageSavePopup">
+        <div class="popupHead"><span class="popupTitle">Export Diagram</span><span class="popupCloseIcon" title="close">✕</span>
+        </div>
+        <div class="popupDialogInner">
+            Right click and copy image or Save as...
+            <br>
+            <div id="imageDiv">
+            </div>
+        </div>
+    </div>
+
+    <div class="popupDialog" id="infoPopup">
+        <div class="popupHead"><span class="popupTitle">About</span><span class="popupCloseIcon" title="close">✕</span></div>
+        <div class="popupDialogInner">
+            <p class="infoText">SequenceDiagram.org is an online tool / software for creating UML sequence diagrams. Founded in 2014 with the purpose to improve
+                the efficiency when creating and working with sequence diagrams by combining text notation scripting and drawing by clicking and dragging in the
+                same model.</p>
+
+            <p class="infoText">All parsing, processing, and drawing is done client side. The benefit of this is that SequenceDiagram.org is fast and convenient to work with;
+                it also doesn’t transfer your diagram data over the Internet like many other sequence diagram tools on the market. This also means that it is
+                possible to work with the tool offline.</p>
+
+            <p class="infoText">The tool is developed, maintained, and used by people who create a lot of sequence diagrams in their daily work. If you have any question / comments
+                / suggestions / bugs please contact info@sequencediagram.org. The more feedback we get the better we can prioritize.</p><br>
+
+            <h1 class="infoHeadline">FAQ</h1>
+            <h2 class="infoFAQ">Privacy and data protection information</h2>
+            <p class="infoText">The tool itself does not collect data, however services it relies on such as Content Delivery Network, hosting, and cloud storage
+                does. See <a href="https://sequencediagram.org/privacypolicy.html">privacy policy</a> for details.</p><br>
+
+            <h2 class="infoFAQ">Are diagrams/scripts created using SequenceDiagram.org subject to any license?</h2>
+            <p class="infoText">No license is imposed by SequenceDiagram.org on the generated output.
+                However, like with all images containing text, the fonts used might. The default font used in diagrams is the default sans-serif font selected by
+                your browser. You can specify a different font using the fontfamily keyword, see help for more information.</p><br>
+
+            <h2 class="infoFAQ">On which platforms is SequenceDiagram.org available?</h2>
+            <p class="infoText">
+            </p><ul>
+                <li><a href="https://sequencediagram.org/" target="_blank">Web (this is where you are now)</a></li>
+                <li><a href="https://workspace.google.com/marketplace/app/sequencediagramorg/128530462773" target="_blank">Google Drive integration</a></li>
+                <li><a href="https://marketplace.atlassian.com/apps/1228516/sequencediagram-org-for-confluence?hosting=cloud&amp;tab=overview" target="_blank">Atlassian Confluence Cloud integration</a></li>
+                <li>Intellij IDEA - Very soon</li>
+            </ul>
+            <p></p><br>
+
+            <h2 class="infoFAQ">How do I generate a PDF of my sequence diagram?</h2>
+            <p class="infoText">Zoom to a chosen level in the editor and Print to PDF from your browser. The print css makes sure to only show the diagram on the
+                page.</p><br>
+
+            <h2 class="infoFAQ">Are there any example sequence diagrams?</h2>
+            <p class="infoText">Yes, clicking the help menu and selecting "Instructions" will show examples of all possible diagram elements. A copy icon is
+                available for copying the source text.</p><br>
+
+            <h2 class="infoFAQ">Is the codebase of SequenceDiagram.org open source?</h2>
+            <p class="infoText">No, the codebase is currently not available under any open source license</p><br>
+
+            <h2 class="infoFAQ">What libraries are used by SequenceDiagram.org?</h2>
+            <p class="infoText">
+            </p><ul>
+                <li><a href="https://github.com/pieroxy/lz-string">lz-string</a> is used to create URLs for sharing sequence diagrams.
+                    <a href="https://sequencediagram.org/libs/lz-string-LICENSE.txt">LICENSE</a></li>
+                <li><a href="https://github.com/gliffy/canvas2svg">Canvas2Svg</a> is used to export the diagram into SVG file format.
+                    <a href="https://sequencediagram.org/libs/canvas2svg-LICENSE.txt">LICENSE</a></li>
+                <li><a href="https://codemirror.net/">CodeMirror</a> is used as the text editor.
+                    <a href="https://sequencediagram.org/libs/codemirror-LICENSE.txt">LICENSE</a></li>
+                <li><a href="http://fontawesome.io/">Font Awesome</a> is used to provide icons for the icon participants.
+                    <a href="https://sequencediagram.org/libs/fontawesome-webfont-LICENSE.txt">LICENSE</a></li>
+                <li><a href="https://materialdesignicons.com/">Material Design Icons from the Community</a> is used to provide icons for the icon participants.
+                    <a href="https://sequencediagram.org/libs/materialdesignicons-webfont-LICENSE.txt">LICENSE</a></li>
+                <li><a href="https://github.com/google/material-design-icons">Material Design icons by Google</a> (included in materialdesignicons.com collection)
+                    is used to provide icons for the icon participants.
+                    <a href="https://sequencediagram.org/libs/materialdesigniconsbygoogle-LICENSE.txt">LICENSE</a></li>
+                <li><a href="https://fontawesome.com/">Font Awesome 5 Free</a> is used to provide icons for the icon participants.
+                <a href="https://sequencediagram.org/libs/fontawesome5free-LICENSE.txt">LICENSE</a></li>
+                <li><a href="https://fontawesome.com/">Font Awesome 6 Free</a> is used to provide icons for the icon participants.
+                <a href="https://sequencediagram.org/libs/fontawesome6free-LICENSE.txt">LICENSE</a></li>
+                <li><a href="https://github.com/mourner/rbush">RBush</a> is used for collision detection calculations for onmousemove events.
+                    <a href="https://sequencediagram.org/libs/rbush-LICENSE.txt">LICENSE</a></li>
+                <li><a href="https://github.com/AzureAD/microsoft-authentication-library-for-js">MSAL.js</a> from Microsoft is used for authentication towards
+                    Microsoft services.
+                </li>
+                <li><a href="https://docs.microsoft.com/en-us/onedrive/developer/controls/file-pickers/js-v72/?view=odsp-graph-online">OneDrive.js</a> from
+                    Microsoft is used for file picker for OneDrive and SharePoint.
+                </li>
+                <li><a href="https://developers.google.com/identity/gsi/web/guides/overview">gsi/client</a> and <a href="./Untitled - SequenceDiagram.org_files/api.js">api.js</a> from
+                    Google is used for authentication towards Google services and file picker for Google Drive and Team Drives.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="popupDialog" id="shareUrlPopup">
+        <div class="popupHead"><span class="popupTitle">Share Link</span><span class="popupCloseIcon" title="close">✕</span></div>
+        <div class="popupDialogInner">
+            <p>Copy a link and share it</p>
+            <p>&nbsp;</p>
+            <table class="center">
+                <tbody><tr>
+                    <td>Link:&nbsp;&nbsp;</td>
+                    <td><textarea id="rawLinkCompressed" class="rawLink"></textarea></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;<br>&nbsp;</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Presentation Mode Link:&nbsp;&nbsp;</td>
+                    <td><textarea id="rawLinkPresentationModeReadOnlyCompressed" class="rawLink"></textarea></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;<br>&nbsp;</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>URI Encoded Link:&nbsp;&nbsp;</td>
+                    <td><textarea id="rawLinkUriEncoded" class="rawLink"></textarea></td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div>
+
+    <div class="popupDialog" id="webStoragePopup">
+        <div class="popupHead"><span class="popupTitle">Web Storage (localStorage)</span><span class="popupCloseIcon" title="close">✕</span></div>
+        <div class="popupDialogInnerWithFooter">
+            <table id="webStorageDiagramTable">
+                <thead>
+                <tr>
+                    <th id="toggleWebStorageSelection">☐</th>
+                    <th>Name</th>
+                    <th>Modified</th>
+                    <th>Size</th>
+                </tr>
+                </thead>
+                <tbody id="webStorageDiagramTableTBody">
+
+                </tbody>
+            </table>
+        </div>
+        <div class="popupDialogBottom">
+                <span class="popupDialogButtons">
+                    <button id="webStoragePopupCancel">Cancel</button>
+                    <button id="webStorageDelete">Delete</button>
+                    <button id="webStorageOpen">Open</button>
+                </span>
+        </div>
+    </div>
+
+    <div class="popupDialog" id="instructionsPopup">
+        <div class="popupHead">
+            <span class="popupTitle">Instructions</span><span class="popupCloseIcon" title="close">✕</span>
+        </div>
+        <div class="popupDialogInnerIFrame">
+            <iframe id="instructionsIFrame" class="popupIFrame" frameborder="0" src="./Untitled - SequenceDiagram.org_files/saved_resource.html"></iframe>
+        </div>
+    </div>
+
+    <div class="popupDialog" id="privacyPolicyPopup">
+        <div class="popupHead">
+            <span class="popupTitle">Privacy Policy</span><span class="popupCloseIcon" title="close">✕</span>
+        </div>
+        <div class="popupDialogInnerIFrame">
+            <iframe id="privacyPolicyIFrame" class="popupIFrame" frameborder="0" src="./Untitled - SequenceDiagram.org_files/saved_resource(1).html"></iframe>
+        </div>
+    </div>
+
+    <div class="popupDialog" id="termsOfServicePopup">
+        <div class="popupHead">
+            <span class="popupTitle">Terms of Service</span><span class="popupCloseIcon" title="close">✕</span>
+        </div>
+        <div class="popupDialogInnerIFrame">
+            <iframe id="termsOfServiceIFrame" class="popupIFrame" frameborder="0" src="./Untitled - SequenceDiagram.org_files/saved_resource(2).html"></iframe>
+        </div>
+    </div>
+</div>
+
+<script src="./Untitled - SequenceDiagram.org_files/initMain.js"></script>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

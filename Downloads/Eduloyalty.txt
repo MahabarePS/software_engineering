@@ -1,0 +1,61 @@
+title EduLoyalty
+
+actor User
+participant Refer
+participant Login/Signup
+participant Dashboard
+participant Database
+participant Pts_Cal
+participant Coupon
+participant Badge
+participant HOF
+participant Feedback
+participant Redeem
+
+activate User
+activate Refer
+User->Refer: Refer
+Refer-->User:Acknowledgement
+deactivateafter Refer
+activate Login/Signup
+User->Login/Signup: Signup
+Login/Signup-->User:Acknowledgement
+Login/Signup->Database:Insert user data
+Database-->Login/Signup:
+User->Login/Signup: Login
+deactivateafter User
+activate Pts_Cal
+Database->Pts_Cal: Cal_pts()
+deactivateafter Pts_Cal
+activate Database
+Login/Signup->Database:Validate user data
+Database-->Login/Signup:Response
+deactivateafter Login/Signup
+Database->Dashboard:Redirected
+deactivateafter Database
+activate Pts_Cal
+Pts_Cal->Dashboard: Displays total points
+Pts_Cal->Pts_Cal: compute Points
+Pts_Cal->Database: insert t-points
+deactivateafter Pts_Cal
+activate Coupon
+Coupon->Dashboard: Display available coupons
+Coupon->Coupon: compute Coupons
+Coupon->Database:insert Coupon
+deactivateafter Coupon
+activate Badge
+Coupon->Badge: Coupon list
+deactivateafter Badge
+activate HOF
+activate User
+User->HOF: Show hall of fame page
+HOF-->Database: fetch top 3
+deactivateafter HOF
+activate Feedback
+User->Feedback: Give feedback
+Feedback-->Pts_Cal: compute feedback points
+deactivateafter Feedback
+activate Redeem
+User->Redeem: Coupon Redeemed 
+deactivateafter Redeem
+deactivateafter User
